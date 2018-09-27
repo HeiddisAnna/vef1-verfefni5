@@ -28,8 +28,8 @@ main {
 }
 
 h1, h2, h3 {
-    font-size: 1.375em; /* 1,375*16 = 22 */
-    line-height: 1.375em;  /* Virkar ekki */
+    font-size: 1.375em; 
+    line-height: 1.375em;  
     padding: 7px; 
 }
 
@@ -45,29 +45,28 @@ h1, h2, h3 {
   max-width: 470px; 
   max-height: 300px; 
   width: 100%; 
-  overflow: hidden;  /* Fela texta sem fer útfyrir */
-  margin-bottom: 10px; /* 10px */
-  overflow-wrap: break-word; /* Löng orð brotna niður */
-  /* á krossás er allt jafn stórt */
+  overflow: hidden; 
+  margin-bottom: 10px; 
+  overflow-wrap: break-word; 
 }
 
 
 .card-contain {
   display: flex;
-  flex: 2; /* það eru 2 item í contain */ 
-  padding: 7px;   /* Má ég hafa þetta svona!! */
+  flex: 2; 
+  padding: 7px; /* Ákveðið var að nota 7px padding svo síðan líkist forskript */
 }
 
 .card-text {
   line-height: 1.375em;
   font-size: 1em;
-  overflow: auto; /* VIRKAR EKKI!! --> Á að koma scrollbar þegar þarf */ 
-  word-break: break-word; /* Passar að orðin fari í næstu línu */
+  overflow: auto; 
+  word-break: break-word; 
 }
 
 .card-picture {
   padding-left: 20px;
-  flex: 0 0 150px; /* breydd á fex-item er 150px */
+  flex: 0 0 150px; 
 }
 
 .card-img {
@@ -79,9 +78,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  padding-bottom: 7px; 
-
-
+  padding-bottom: 8px; /* Svo síða líkist forskript */
 }
 
 .card-list-item{
@@ -91,4 +88,4 @@ h1, h2, h3 {
   font-weight: bold; 
 }
 
-/* Ef það er fond skal nota em annars px */ 
+
