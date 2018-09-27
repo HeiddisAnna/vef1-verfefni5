@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.cards {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1, h2, h3 {
+    font-size: 1.375em; /* 1,375*16 = 22 */
+    line-height: 1.375em;  /* Virkar ekki */
+    padding: 7px; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column; 
+
+  background: #fff;
+  border: 2px;
+  border: solid; 
+  border-radius: 5px;
+  border-color:#aaa;  
+  max-width: 470px; 
+  max-height: 300px; 
+  width: 100%; 
+  overflow: hidden;  /* Fela texta sem fer útfyrir */
+  margin-bottom: 10px; /* 10px */
+  overflow-wrap: break-word; /* Löng orð brotna niður */
+  /* á krossás er allt jafn stórt */
+}
+
+
+.card-contain {
+  display: flex;
+  flex: 2; /* það eru 2 item í contain */ 
+  padding: 7px;   /* Má ég hafa þetta svona!! */
+}
+
+.card-text {
+  line-height: 1.375em;
+  font-size: 1em;
+  overflow: auto; /* VIRKAR EKKI!! --> Á að koma scrollbar þegar þarf */ 
+  word-break: break-word; /* Passar að orðin fari í næstu línu */
+}
+
+.card-picture {
+  padding-left: 20px;
+  flex: 0 0 150px; /* breydd á fex-item er 150px */
+}
+
+.card-img {
+  max-width: 100%;
+}
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 7px; 
+
+
+}
+
+.card-list-item{
+  font-size: 1em; 
+  line-height: 1.375em;
+  margin-left: 10px; 
+  font-weight: bold; 
+}
+
+/* Ef það er fond skal nota em annars px */ 
